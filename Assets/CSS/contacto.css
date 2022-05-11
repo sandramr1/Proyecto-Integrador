@@ -11,7 +11,8 @@
     color: #1e6ba2;
 }
 
-.cabeza{
+
+.pie{
     position: relative;
     overflow: hidden;
     display:flex;
@@ -21,8 +22,22 @@
     background: black;
 }
 
+.barra{
+    padding:100px;
 
-.pie{
+}
+
+#Titulo1{
+    position: relative;
+    overflow: hidden;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height:100px;
+    background: black;
+}
+
+#Titulo2{
     position: relative;
     overflow: hidden;
     display:flex;
