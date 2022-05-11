@@ -1,0 +1,27 @@
+
+
+
+.imgInicio{
+
+    text-align: right;
+    background: linear-gradient(288.34deg, #A79017 2.17%, rgba(196, 196, 196, 0.234375) 46.72%, rgba(196, 196, 196, 0) 56.85%);
+}
+
+.card{
+    position: relative;
+    margin:30px;
+    padding:20px;
+    
+
+}
+
+.footer{
+    position: relative;
+    overflow: hidden;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 10pxvh;
+    background:  rgb(76, 73, 78);
+    color: white;
+}
