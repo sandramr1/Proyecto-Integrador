@@ -1,12 +1,15 @@
+
 #imgNosotros{
-   border-radius: 50%;
-   height: 150px;
+  
+   height: 100px;
 }
 #cartaNosotros{
-    width: 10rem;
+    width: 150px;
+    height: 400px;
     border: none;
     margin-top: 10px;
-    background:none;
+    background: none;
+    margin-bottom: 20px;
 }
 #quienSomo{
 
@@ -16,7 +19,7 @@ font-style: normal;
 font-weight: 400;
 font-size: 50px;
 text-align: center;
-color: #A79017;
+color: #1E6BA2;
 
 }
 #quienSomoDes{
@@ -26,19 +29,13 @@ font-style: normal;
 
 font-size: 20px;
 text-align: center;
-color: black;
+color: #1E6BA2;
 }
 #header{
-    background: radial-gradient(88.89% 88.89% at 50% 50%, rgba(0, 0, 0, 0.829) 0%, rgba(0, 0, 0, 0) 100%);
+    background: #1E6BA2;
     
 }
 
-.main{
-    background-image: url('/Assets/img/living.jpg');
-    background-repeat: no-repeat;
-  background-size: 1500px 800px;
-  background-position: center;
-}
 #footer{
         position: relative;
         overflow: hidden;
@@ -46,11 +43,54 @@ color: black;
         align-items: center;
         justify-content: center;
         height: 30px;
-        background: radial-gradient(88.89% 88.89% at 50% 50%, rgba(0, 0, 0, 0.829) 0%, rgba(0, 0, 0, 0) 100%);
+        background: #1E6BA2;
     }
 #nombre{
+
     text-align: center;
-    color: #A79017;
+    color: #1E6BA2;
     text-size-adjust:  40px;
 }
-    
+
+.navLink{
+    color: #FFFFFF;
+}  
+#des{
+    color: #1E6BA2;
+}
+
+.git {
+    margin-left: 2px;
+    color: #FFFFFF !important;
+    font-size: 11px;
+    font-weight: 500px;
+    padding: 0.1em 1.2em;
+    background: #68757B;
+    border: 2px solid;
+    border-color: #68757B;
+    position: relative;
+  }
+  .git:before {
+    content:"";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    transition: all 1s ease;
+  }
+  .git:hover:before {
+  width: 100%;
+  }
+  #primerQuien{
+      margin-top: 30px;
+      padding: 50px;
+      border: none;
+  }
+  #centrado{
+      text-align: center;
+  }
+  .integrantes{
+      text-align: center;
+  }
