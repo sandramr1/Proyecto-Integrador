@@ -1,0 +1,56 @@
+#imgNosotros{
+   border-radius: 50%;
+   height: 150px;
+}
+#cartaNosotros{
+    width: 10rem;
+    border: none;
+    margin-top: 10px;
+    background:none;
+}
+#quienSomo{
+
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 50px;
+text-align: center;
+color: #A79017;
+
+}
+#quienSomoDes{
+    
+font-family: 'Inter';
+font-style: normal;
+
+font-size: 20px;
+text-align: center;
+color: black;
+}
+#header{
+    background: radial-gradient(88.89% 88.89% at 50% 50%, rgba(0, 0, 0, 0.829) 0%, rgba(0, 0, 0, 0) 100%);
+    
+}
+
+.main{
+    background-image: url('/Assets/img/living.jpg');
+    background-repeat: no-repeat;
+  background-size: 1500px 800px;
+  background-position: center;
+}
+#footer{
+        position: relative;
+        overflow: hidden;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        height: 30px;
+        background: radial-gradient(88.89% 88.89% at 50% 50%, rgba(0, 0, 0, 0.829) 0%, rgba(0, 0, 0, 0) 100%);
+    }
+#nombre{
+    text-align: center;
+    color: #A79017;
+    text-size-adjust:  40px;
+}
+    
