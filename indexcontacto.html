@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    
+    <!--inicio header-->
     <header class="cabeza">
     <div id="Titulo1">
         <h1 id="contactanos"> CONTACTANOS <br> </h1>
@@ -21,79 +21,64 @@
     <div id="Titulo2">
         <h2 id="contactanos"> Mandanos un mensaje con los detalles que buscas: </h2>
     </div>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Inicio</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Conocenos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contacto</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Productos</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown link
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+
+    <!--inicio navbar-->
+    <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Conocenos</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Contacto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Productos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Perfil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Registrarse</a>
+          </li>
+       
+      </ul>
+    <!--final de la navbar-->
   </header>
     <div class="row align-items-center">
         <div class="col">
             <div class="row align-items-center">
                 <!--columnas tarjetas-->
                 <div class="col">
-                    <div class="card" style="width: 18rem;">
+                    <div class="card text-dark bg-light mb-3" style="max-width: 18rem;">
+                        <div class="card-header">Header</div>
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                            <a href="#" class="card-link">Card link</a>
-                            <a href="#" class="card-link">Another link</a>
+                          <h5 class="card-title">Light card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
-                    </div>
+                      </div>
                 </div>
                 <div class="col">
-                    <div class="card" style="width: 18rem;">
+                    <div class="card text-dark bg-light mb-3" style="max-width: 18rem;">
+                        <div class="card-header">Header</div>
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                            <a href="#" class="card-link">Card link</a>
-                            <a href="#" class="card-link">Another link</a>
+                          <h5 class="card-title">Light card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
-                    </div>
+                      </div>
                 </div>
                 <div class="col">
-                    <div class="card" style="width: 18rem;">
+                    <div class="card text-dark bg-light mb-3" style="max-width: 18rem;">
+                        <div class="card-header">Header</div>
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                            <a href="#" class="card-link">Card link</a>
-                            <a href="#" class="card-link">Another link</a>
+                          <h5 class="card-title">Light card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
-                    </div>
+                      </div>
                 </div>
             </div>
         </div>
@@ -102,36 +87,36 @@
             <form>
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Nombre*:  </label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <input type="nombre" class="form-control" id="exampleInputnombre" aria-describedby="emailHelp" required>
                     
                 </div>
                 <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">E-mail*: </label>
-                    <input type="password" class="form-control" id="exampleInputPassword1">
+                    <label for="exampleInputEmail1" class="form-label">E-mail*: </label>
+                    <input type="Email" class="form-control" id="exampleInputEmail1" required>
                 </div>
                 <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Teléfono*:  </label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <label for="exampleInputTelefono" class="form-label">Teléfono:  </label>
+                    <input type="Telefono" class="form-control" id="exampleInputTelefono1" aria-describedby="TelefonoHelp">
                     
                 </div>
                 <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Categoría*: </label>
-                    <input type="password" class="form-control" id="exampleInputPassword1">
+                    <label for="exampleInputcategoria1" class="form-label">Categoría*: </label>
+                    <input type="categoria" class="form-control" id="exampleInputCategoria1" required>
                 </div>
                 <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Comentarios: </label>
-                    <input type="password" class="form-control" id="exampleInputPassword1">
+                    <label for="exampleInputComentarios1" class="form-label">Comentarios: </label>
+                    <input type="Comentarios" class="form-control" id="exampleInputComentarios1">
                 </div>
                 <div class="mb-3 form-check">
                     <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    <label class="form-check-label" for="exampleCheck1">Acepto enviar mi información </label>
                 </div>
-                <button type="submit" id="enviar">Submit</button>
+                <button type="submit" id="enviar">Enviar</button>
             </form>
         </div>
         <div class="col">
             <!--Carta de ubicacion-->
-            <div class="card" style="width: 18rem;">
+            <div class="ubicacion" >
                 <div class="card-body">
                     <h5 class="card-title">Ubicación</h5>
                     <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
