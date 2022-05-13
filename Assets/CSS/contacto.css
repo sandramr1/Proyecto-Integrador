@@ -1,4 +1,9 @@
 
+.cabeza{
+    background-image: url("operadora.jpg") ;
+
+}
+
 body {
     font-family: Arial;
     padding: 10px;
@@ -68,7 +73,7 @@ body {
 }
 
 .nav{
-    background-color: #1e6ba2;
+    background-color: #344142;
     border-style: solid;
     border-color: transparent;
     padding:5px;
