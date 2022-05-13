@@ -1,3 +1,35 @@
+#slogan{
+    padding: 100px;
+    text-align: center;
+    background-image: url('/Proyecto-Integrador/Assets/img/living2.jpg');
+    background-repeat: no-repeat;
+ background-attachment: fixed;
+ background-position: center center;
+ background-size: cover;
+    height:400px
+
+} 
+#text{
+    background-image: url('/Proyecto-Integrador/Assets/img/modi.png');
+    background-repeat: no-repeat;
+    background-position: -190% 70%;
+    text-align: center;
+}
+#cartas{
+    padding: 20px;
+    margin-left:200px;
+    
+}
+.card{
+    background-color: #FFFFFF;
+    border: none;
+}
+#quien{
+    background-image: url('/Proyecto-Integrador/Assets/img/modi.png');
+    background-repeat: no-repeat;
+    background-position:250% 40%;
+    text-align: center;
+}
 
 #imgNosotros{
   
@@ -32,7 +64,7 @@ text-align: center;
 color: #1E6BA2;
 }
 #header{
-    background: #1E6BA2;
+    background: #1ed8e269;
     
 }
 
