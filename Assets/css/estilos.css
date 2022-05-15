@@ -135,7 +135,14 @@
     background-position: center center;
     background-size: cover;
   }
-  
+  .cards-responsive{
+    padding:90px !important;
+}
+  @media (max-width: 780px){
+      .cards-responsive{
+          padding:60px !important;
+      }
+  }
 
   .btn-modal{
     background-color: var(--color-primario)!important;
@@ -145,6 +152,7 @@
     padding: 5px 40px;
     color:var(--color-secundario)!important;
   }
+
 
   .btn-modal:hover{
     
