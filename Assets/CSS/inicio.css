@@ -82,9 +82,18 @@
 .menuInicio{
     position: relative;
     text-align: right;
-    margin:20px;
+    margin:10px;
     padding:20px;
+    color:#03364D;
+
 }
+
+/*Se intento modificar texto en menu de deleccion*/
+.ciudad{
+    color:#03364D;
+    background-color: #03364D;
+}
+
 
 
 
