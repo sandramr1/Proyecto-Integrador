@@ -7,7 +7,6 @@
     --color-resaltar:#BF6900;
 }
 
-
 /* Empezamos con el navbar */
 
 .navbar-color{ /* Clase que se aplicara al navbar */
@@ -72,61 +71,3 @@
     color: var(--color-secundario)!important;
     font-weight: bold;
 }
-
-
-body {
-    font-family: Arial;
-    padding: 10px;
-    background: #f1f1f1;
-  }
-  
- /* #enviar{
-    background-color: #68757B;
-    font-weight: 600;
-    padding: 5px 25px 5px 25px;
-    display: inline-block;
-    border: 1px solid transparent
-} */
-
-#contactanos{
-    color: #1e6ba2;
-}
-
-
-
-
-
-#Titulo1{
-    position: relative;
-    overflow: hidden;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    height:100px;
-    background: #FFFFFF;
-}
-
-#Titulo2{
-    position: relative;
-    overflow: hidden;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    height:100px;
-    background: #FFFFFF;
-}
-
-.ubicacion{
-    margin: 40px;
-    background-color: white;
-    border-style: solid;
-    border-color: #cccccc;
-    border-radius: 5px;
-    border-top: solid 0px;
-    border-left: solid 0px;
-}
-
-.form-label{
-    color:#1e6ba2;
-}
-
