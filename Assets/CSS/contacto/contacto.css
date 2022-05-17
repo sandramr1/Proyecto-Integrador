@@ -80,28 +80,19 @@ body {
     background: #f1f1f1;
   }
   
- #enviar{
+ /* #enviar{
     background-color: #68757B;
     font-weight: 600;
     padding: 5px 25px 5px 25px;
     display: inline-block;
     border: 1px solid transparent
-}
+} */
 
 #contactanos{
     color: #1e6ba2;
 }
 
 
-.pie{
-    position: relative;
-    overflow: hidden;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    height:100px;
-    background:  #68757B;
-}
 
 
 
