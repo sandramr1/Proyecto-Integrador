@@ -9,3 +9,4 @@ document.getElementById('select-location').addEventListener('change',function(e)
   let coords = e.target.value.split(",");
   map.flyTo(coords,13);
 })
+

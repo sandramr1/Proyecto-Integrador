@@ -67,15 +67,98 @@
       </nav>   <!-- navbar -->
    
       <main>
-          <div class="container">
-              <div class="row">
-                  <div class="p-5">
-                      <!-- Acá pueden poner su respectiva información  -->
-                      <h1>Documento base</h1>
-                      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed soluta nulla pariatur. Veniam, doloribus modi, repudiandae nisi sunt debitis qui, nemo unde obcaecati vitae numquam. Debitis accusantium atque dicta provident!</p>
+        <div class="container">
+          <div class="row">
+              <div class="p-5">
+
+              
+ 
+            <!--columnas tarjetas-->
+            <div class="col">
+              <div class="container">
+                <div class="row">
+                  <div class="col">
+                    <div class="card text-dark bg-light mb-3" style="max-width: 18rem;">
+                      <div class="card-header">Header</div>
+                      <div class="card-body">
+                        <h5 class="card-title">Light card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      </div>
+                  </div>
+                  <div class="col">
+                    <div class="card text-dark bg-light mb-3" style="max-width: 18rem;">
+                      <div class="card-header">Header</div>
+                      <div class="card-body">
+                        <h5 class="card-title">Light card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      </div>
                     </div>
+                  </div>
+                  <div class="col">
+                    <div class="card text-dark bg-light mb-3" style="max-width: 18rem;">
+                      <div class="card-header">Header</div>
+                      <div class="card-body">
+                        <h5 class="card-title">Light card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-          </div>
+
+
+
+
+
+
+                
+    <div class="col">
+        <!--Formulario de mensaje-->
+        <form>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Nombre*:  </label>
+                <input type="nombre" class="form-control" id="exampleInputnombre" aria-describedby="emailHelp" required>
+                
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">E-mail*: </label>
+                <input type="Email" class="form-control" id="exampleInputEmail1" required>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputTelefono" class="form-label">Teléfono:  </label>
+                <input type="Telefono" class="form-control" id="exampleInputTelefono1" aria-describedby="TelefonoHelp">
+                
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputcategoria1" class="form-label">Categoría*: </label>
+                <input type="categoria" class="form-control" id="exampleInputCategoria1" required>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputComentarios1" class="form-label">Comentarios: </label>
+                <input type="Comentarios" class="form-control" id="exampleInputComentarios1">
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Acepto enviar mi información </label>
+            </div>
+            <button type="submit" id="enviar">Enviar</button>
+        </form>
+    </div>
+    <div class="col">
+        <!--Carta de ubicacion-->
+        <div class="ubicacion" >
+            <div class="card-body">
+                <h5 class="card-title">Ubicación</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3732.5055046820285!2d-103.43232928460094!3d20.6896876046417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428aee7fa9f7c5f%3A0xd647fb04da70b150!2sAv%20Naciones%20Unidas%2C%20Zapopan%2C%20Jal.!5e0!3m2!1ses-419!2smx!4v1652283656690!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+                <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link">Another link</a>
+            </div>
+        </div>
+    </div>
+</div>
       </main>
 
       <footer class="bg-light text-dark text-center pb-2 pt-4 footer-class">

@@ -67,11 +67,6 @@
 
   /* Footer */
 
-  .footer-class{
-    background-color: var(--color-primario)!important;
-    color: var(--color-secundario)!important;
-    font-weight: bold;
-}
 
 
 body {
@@ -126,7 +121,10 @@ body {
     border-left: solid 0px;
 }
 
-.form-label{
-    color:#1e6ba2;
+.footer-class{
+    background-color: var(--color-primario)!important;
+    color: var(--color-secundario)!important;
+    font-weight: bold;
 }
+
 

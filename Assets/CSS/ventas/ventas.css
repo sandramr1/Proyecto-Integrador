@@ -74,8 +74,22 @@
 
 
 /*Mapa*/
-#map {
-    height: 500px;
-    width: 750px;
-  }
+#map{
+    height: 400px;
+    width: 600px;
+  
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+/*Estilos de los dropdowns*/
+#busqueda{
+    padding: 20px;
+    margin-bottom: 30px;
+}
 
+/*Estilos de las cartas*/
+.cards{
+    padding: 80px;
+}
