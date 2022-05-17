@@ -7,7 +7,6 @@
     --color-resaltar:#BF6900;
 }
 
-
 /* Empezamos con el navbar */
 
 .navbar-color{ /* Clase que se aplicara al navbar */
@@ -74,47 +73,82 @@
 }
 
 
-body {
-    font-family: Arial;
-    padding: 10px;
-    background: #f1f1f1;
-  }
-  
- /* #enviar{
-    background-color: #68757B;
-    font-weight: 600;
-    padding: 5px 25px 5px 25px;
-    display: inline-block;
-    border: 1px solid transparent
-} */
+/* Inicia Hero */
 
-#contactanos{
-    color: #1e6ba2;
-}
+.banner-area{
+    width:100%;
+    height:50vh;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(/Assets/img/contactanos/contactanos.webp);
+    background-size:cover;
+}        
 
-
-
-
-
-#Titulo1{
-    position: relative;
-    overflow: hidden;
+.content-area{
+    height:100%;
     display:flex;
-    align-items: center;
     justify-content: center;
-    height:100px;
-    background: #FFFFFF;
+    align-items: center;
 }
 
-#Titulo2{
-    position: relative;
-    overflow: hidden;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    height:100px;
-    background: #FFFFFF;
+.content{
+    text-align: center;
 }
+
+.content h1{
+    color:#fff;
+}
+
+.content p{
+    color:#ddd;
+}
+
+.content .btn{
+    border:none;
+    outline:none;
+    padding:15px;
+    margin-top:100px;
+    border-radius: 4px;
+    color:#eee;
+    font-size: 18px;
+    cursor: pointer;    
+    background:#222;             
+}
+
+/* Termina hero */
+
+/*Efectos formularios y tarjetas */
+
+.form-group{
+ margin: 100px;
+ background-color: white;
+    border-style: solid;
+    border-color: #cccccc;
+    border-radius: 5px;
+    border-top: solid 0px;
+    border-left: solid 0px;
+    color:var(--color-fuente)!important
+}
+
+.cartas{
+    padding:100px
+
+}
+
+.card{
+    margin: 40px;
+    background-color: white;
+    border-style: solid;
+    border-color: #cccccc;
+    border-radius: 5px;
+    border-top: solid 0px;
+    border-left: solid 0px;
+    color:var(--color-fuente)!important
+}
+
+.formulario{
+    padding:200px;
+}
+
+/* Carta ubicacion */
 
 .ubicacion{
     margin: 40px;
@@ -125,8 +159,3 @@ body {
     border-top: solid 0px;
     border-left: solid 0px;
 }
-
-.form-label{
-    color:#1e6ba2;
-}
-
