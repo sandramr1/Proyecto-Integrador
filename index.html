@@ -1,93 +1,242 @@
 <!DOCTYPE html>
 <html lang="es-mx">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Equipo Dinamita</title>
-    <!-- Iconos de bootstrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
-    <!-- Cargamos bootstrap desde el CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"
-    <!-- Cargamos los estilos -->
-    <link rel="stylesheet" href="Assets/css/estilos.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Equipo Dinamita</title>
+  <!-- Iconos de bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  <!-- Cargamos bootstrap desde el CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" <!--
+    Cargamos los estilos -->
+  <link rel="stylesheet" href="Assets/css/estilos.css">
+  <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
 </head>
+
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top navbar-color sticky-top ">
-        <div class="container">
-          <a href="#" class="navbar-brand">LOGO Inmobiliaria</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="col-xs-4 navbar-nav mx-auto ms-auto py-2 text-menu">
-              <li class="nav-item">
-                  <!--La clase active se debe de poner en cada página del en el navbar -->
-                <a href="#" class="nav-link active" aria-current="page">
-                  Inicio
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link"> Productos </a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link"> Formulario </a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link"> Contactanos </a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link"> Acerca de nosotros </a>
-              </li>
-            </ul>
-            <ul class="navbar-nav col-xs-4 border-mq">
-                <li class="nav-item text-menu">
-                    <a href="#" class="nav-link"> API </a>
-                  </li>
-                <li class="nav-item text-menu">
-                    <a href="#" class="nav-link"> Help </a>
-                  </li>
-                  <li class="nav-item text-menu">
-                    <a href="#" class="nav-link"> Login </a>
-                  </li>
-             
-                <a href="" class="btn btn-primary btn-signup">Sign Up</a>
-            </ul>
+  <!-- Empieza Navbar -->
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top navbar-color sticky-top ">
+    <div class="container">
+      <a href="#" class="navbar-brand">LOGO Inmobiliaria</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="col-xs-4 navbar-nav mx-auto ms-auto py-2 text-menu">
+          <li class="nav-item">
+            <!--La clase active se debe de poner en cada página del en el navbar -->
+            <a href="/index.html" class="nav-link active" aria-current="page">
+              Inicio
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="/ventas.html" class="nav-link"> Productos </a>
+          </li>
+          <li class="nav-item">
+            <a href="/formulario.html" class="nav-link"> Formulario </a>
+          </li>
+          <li class="nav-item">
+            <a href="/contacto.html" class="nav-link"> Contactanos </a>
+          </li>
+          <li class="nav-item">
+            <a href="/nosotros.html" class="nav-link"> Acerca de nosotros </a>
+          </li>
+        </ul>
+        <ul class="navbar-nav col-xs-4 border-mq">
+          <li class="nav-item text-menu">
+            <a href="#" class="nav-link"> API </a>
+          </li>
+          <li class="nav-item text-menu">
+            <a href="#" class="nav-link"> Help </a>
+          </li>
+          <li class="nav-item text-menu">
+
+            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#modalLogin"> Login </a>
+          </li>
+
+          <a href="" class="btn btn-primary btn-signup">Sign Up</a>
+        </ul>
+      </div>
+    </div>
+  </nav> <!-- navbar -->
+
+  <main>
+    <div>
+      <div class="banner-area">
+        <div class="content-area">
+          <div class="content">
+            <h1 class="display-5 fw-bold">Hoomy</h1>
+            <h2 style="color:white ;">Una nueva vida a solo un click</h2>
+            <!-- Formulario de busqueda -->
+            <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="search" placeholder="¿Doonde deseas ir?" aria-label="Search">
+              <button class="btn btn-success my-2 my-sm-0" type="submit">Buscar</button>
+            </form>
           </div>
         </div>
-      </nav>   <!-- navbar -->
-   
-      <main>
-          <div class="container">
-              <div class="row">
-                  <div class="p-5">
-                      <!-- Acá pueden poner su respectiva información  -->
-                      <h1>Documento base</h1>
-                      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed soluta nulla pariatur. Veniam, doloribus modi, repudiandae nisi sunt debitis qui, nemo unde obcaecati vitae numquam. Debitis accusantium atque dicta provident!</p>
-                    </div>
+      </div>
+    </div>
+  </main> <!-- Termina main -->
+
+
+  <!-- empieza carousel -->
+  <section>
+    <div class="container mt-5 mb-5">
+      <div class="row">
+        <div class="col">
+          <h3 class="text-center">Nuestras ubicaciones</h3>
+          <div class="owl-container">
+            <div class="owl-carousel owl-theme">
+              <div class="item">
+                <div class="card" style="width: 18rem;">
+                  <img src="assets/img/casa.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Ciudad de México</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                      card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
               </div>
+              <div class="item">
+                <div class="card" style="width: 18rem;">
+                  <img src="assets/img/casa.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Queretaro</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                      card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="card" style="width: 18rem;">
+                  <img src="assets/img/casa.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Monterrey</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                      card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="card" style="width: 18rem;">
+                  <img src="assets/img/casa.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Guadalajara</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                      card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="card" style="width: 18rem;">
+                  <img src="assets/img/casa.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Puebla</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                      card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-      </main>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
-      <footer class="bg-light text-dark text-center pb-2 pt-4 footer-class">
-          <p>Inmobiliaria &copy; 2022 Todos los derechos Reservados</p>
-      </footer> <!-- Termina footer -->
+  <!-- iniciamos modal de login -->
+  <!-- El modal de login nos va servir emular un inicio de sesión -->
+  <!-- Modal -->
+  <div class="modal fade" id="modalLogin" tabindex="-1" aria-labelledby="modalLoginLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalLoginLabel">Iniciar Sesión</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="text-center h3 py-3">Bienvenido de vuelta</p>
+          <form>
+            <div class="mb-3">
+              <label for="email" class="form-label">Correo Electrónico</label>
+              <input type="email" class="form-control" id="email" placeholder="Tu correo electrónico"
+                aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <label for="contraseña" class="form-label">Contraseña</label>
+              <input type="password" class="form-control" id="contraseña">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Recordar la contraseña</label>
+            </div>
+            <!-- <button type="submit" class="btn btn-primary d-flex justify-content-between btn-signup" id="toastLogin">Iniciar sesión</button> -->
+            <button type="submit" class="btn btn-primary d-flex justify-content-between btn-signup" id="toastBtn"
+              data-bs-dismiss="modal">Iniciar sesión</button>
+          </form>
+        </div>
+        <div class="modal-footer">
 
-      
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-      
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+        </div>
+      </div>
+    </div>
+  </div> <!-- Fin del modal de login -->
 
-    </body>
-  </body>
+  <!-- toast -->
+  <section>
+
+    <!-- ! Forma corta -->
+    <!-- Esto hará que aparezca en la parte inferior izquierda... -->
+    <div class="position-fixed bottom-0 end-0 p-3" style="z-index:10;">
+      <div id="toast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+          <strong class="me-auto">Inicio de sesión</strong>
+          <small>Conexión exitosa...</small>
+          <!-- Para que se cierre el toast con data-bs-dismiss -->
+          <button type="button" data-bs-dismiss="toast" aria-label="Cerrar notificación" class="btn-close"></button>
+        </div>
+        <div class="toast-body">
+          <p>Bienvenido de vuelta!</p>
+        </div>
+      </div>
+    </div>
+  </section> <!-- Fin del toast -->
+
+
+
+
+  <footer class="bg-light text-dark text-center pb-2 pt-4 footer-class">
+    <p>Inmobiliaria &copy; 2022 Todos los derechos Reservados</p>
+  </footer> <!-- Termina footer -->
+  <script src="/quieneSomos.html"></script>
+  <script src="/Assets/JS/quieneSomos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+  <!-- Estos son scripts para los efectos y funcione chido la página ok? -->
+  <script src='assets/js/jquery.min.js'></script>
+  <script src='assets/js/jquery.mousewheel.min.js'></script>
+  <script src='assets/js/owl.carousel.min.js'></script>
+  <script src='assets/js/main.js'></script>
+  <script src="Assets/js/toast.js"></script>
+
 </body>
+
 </html>
