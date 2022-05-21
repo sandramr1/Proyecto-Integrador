@@ -29,14 +29,31 @@ form.addEventListener('submit',e=>{
     if(entrar){
         parrafo.innerHTML=warnings;
     }else{
-        localStorage.nombre = document.getElementById('nombre').value;
-        localStorage.numero=document.getElementById('')
         parrafo.innerHTML='enviado';
+        var datos=[];//Aqui declaramos un arreglo donde estaremos almacenandos los datos que se vayan agregar a de tu form
+function agregarDatosForm(nombreUsario,emailUsuario,numeroUsuario){
+    var nuevoUsario={//Aqui se crea el objeto 
+        name:nombreUsario,
+        email:emailUsuario,
+        number:numeroUsuario
+    };
+    console.log(nuevoUsario);
+    datos.push(nuevoUsario);
+}
+function obtenerDatos(){
+    return datos;
+}
+
+document.querySelector('#btnSubmit').addEventListener('click',guardarDatosForm);
+
+function guardarDatosForm() {
+    var guardarNombre = document.getElementById('name').value,
+        guardarEmail = document.getElementById('email').value,
+        guardarNumero = document.getElementById('numero').value;
+    
+    agregarDatosForm(guardarNombre,guardarEmail,guardarNumero);
+
+}
     }
 
 });
-form.addEventListener('submit',e=>{
-    e.preventDefault();
-    
-   
-    });
