@@ -70,7 +70,7 @@
 .banner-area{
     width:100%;
     height:70vh;
-    background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(/Assets/img/quieneSomos/living.jpg);
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(/Assets/img/contactanos/contactanos.webp);
     background-size:cover;
 }        
 
@@ -169,7 +169,7 @@
 /*Formulario*/
 
 #card{
-    padding-right: 20px;
+    padding-right: 10px;
     border: solid white;
 }
 #btnSubmit{ /* Clase que se aplicara al boton de login */
@@ -179,7 +179,7 @@
     border-radius: .5px;
     padding: 5px 40px;
     align-items: center;
-    margin-left: 31px;
+    margin-left: 65px;
     margin-top: 20px;
 }
 
@@ -192,22 +192,33 @@
 
 }
 /*Efecto que se le aplicara a los inputs*/
+.form{
+    margin-left: 20px;
+}
+input{
+    margin-left: 30px;
+}
+
+
+
 input[type=text] {
     border: none;
     border-bottom: 2px solid var(--color-primario);
+    
   }
 
-
+  
 
 
 
 
 .warnings{
     width: 200px;
-    text-align: center;
     margin: auto;
-    color: #BF6900;
+    color: red;
     padding-top: 20px;
+    margin-left: 10px;
+    
 }
 
 
