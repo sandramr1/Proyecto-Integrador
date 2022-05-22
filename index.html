@@ -9,18 +9,24 @@
   <!-- Iconos de bootstrap -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
   <!-- Cargamos bootstrap desde el CDN -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
-  <!-- Cargamos los estilos -->
- <link rel="stylesheet" href="/Assets/CSS/index/index.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" <!--
+    Cargamos los estilos -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Assets/css/estilos.css">
+  <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
 </head>
 
 <body>
+
   <!-- Empieza Navbar -->
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top navbar-color sticky-top ">
     <div class="container">
-      <a href="#" class="navbar-brand">LOGO Inmobiliaria</a>
+      <a href="#" class="navbar-brand">Hogary</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -40,10 +46,10 @@
             <a href="/formulario.html" class="nav-link"> Formulario </a>
           </li>
           <li class="nav-item">
-            <a href="/prueba.html" class="nav-link"> Contactanos </a>
+            <a href="/contacto.html" class="nav-link"> Contactanos </a>
           </li>
           <li class="nav-item">
-            <a href="/quieneSomos.html" class="nav-link"> Acerca de nosotros </a>
+            <a href="/nosotros.html" class="nav-link"> Acerca de nosotros </a>
           </li>
         </ul>
         <ul class="navbar-nav col-xs-4 border-mq">
@@ -65,218 +71,235 @@
   </nav> <!-- navbar -->
 
   <main>
-    <div >
+    <div>
       <div class="banner-area">
         <div class="content-area">
           <div class="content">
-            <h1 class="display-5 fw-bold">Hoomy</h1>
+            <h1 class="display-5 fw-bold">Hogari</h1>
             <h2 style="color:white ;">Una nueva vida a solo un click</h2>
+            <!-- Formulario de busqueda -->
+            <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="search" placeholder="¿Doonde deseas ir?" aria-label="Search">
+              <button class="btn btn-success my-2 my-sm-0" type="submit">Buscar</button>
+            </form>
           </div>
         </div>
       </div>
     </div>
   </main> <!-- Termina main -->
 
-  <!--Seccion de cartas para ir a compras y rentas-->
-<section style="margin-top: 20px;">
-    <h2 class="text">Porque nunca fue tan seguro iniciar un nuevo proyecto</h2>
-    <div class="container">
+
+  <!-- empieza carousel -->
+  <section>
+    <div class="container mt-5 mb-5">
       <div class="row">
         <div class="col">
-          <div class="card bg-black text-black" >
-            <img src="/Assets/img/index/compras.jpg" class="card-img" alt="..." id="cards">
-            <div class="card-img-overlay">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                content. This content is a little bit longer.</p>
-              <p class="card-text">Last updated 3 mins ago</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card bg-dark textblack" >
-            <img src="/Assets/img/index/renta.jpg" class="card-img" alt="..." id="cards">
-            <div class="card-img-overlay">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                content. This content is a little bit longer.</p>
-              <p class="card-text">Last updated 3 mins ago</p>
-            </div>
-          </div>
+          <h3 class="text-center">Nuestras ubicaciones</h3>
+          <div class="owl-container">
+            <div class="owl-carousel owl-theme">
+              <div class="item">
+                <div class="card" style="width: 18rem;height: 450px;">
+                  <img src="assets/img/index/cdmx.jpg" class="card-img-top" alt="..." style="height: 200px;">
+                  <div class="card-body">
+                    <h5 class="card-title">Ciudad de México</h5>
+                    <p class="card-text">La Ciudad de México es la capital del país, de carácter vibrante, multifacético
+                      y siempre en movimiento, es el núcleo, político, económico y cultural de la República Mexicana.
+                    </p>
 
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="card" style="width: 18rem;height: 450px;">
+                  <img src="assets/img/index/queretaro.jpg" class="card-img-top" alt="..." style="height: 200px;">
+                  <div class="card-body">
+                    <h5 class="card-title">Queretaro</h5>
+                    <p class="card-text">Ubicado muy cerca de la Ciudad de México, en la región centro-norte del país,
+                      es una excelente opción para realizar actividades al aire libre, conocer lugares que marcaron la
+                      historia de México y sacar tu lado más intrépido entre montañas.</p>
+
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="card" style="width: 18rem;height: 450px;">
+                  <img src="assets/img/index/mnt.jpg" class="card-img-top" alt="..." style="height: 200px;">
+                  <div class="card-body">
+                    <h5 class="card-title">Monterrey</h5>
+                    <p class="card-text">El mercado inmobiliario de Monterrey es la joya del dinamismo inmobiliario en
+                      la región norte del país, descubre las razones y busca aquí tu nuevo hogar.</p>
+
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="card" style="width: 18rem;height: 450px;">
+                  <img src="assets/img/index/gdl.jpg" class="card-img-top" alt="..." style="height: 200px;">
+                  <div class="card-body">
+                    <h5 class="card-title">Guadalajara</h5>
+                    <p class="card-text">La Zona Metropolitana de Guadalajara (ZMG) representa una de las áreas urbanas
+                      con
+                      mayores ventajas y valores agregados para vivir que atrae de manera constante nuevos habitantes.
+                    </p>
+
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="card" style="width: 18rem;height: 450px;">
+                  <img src="assets/img/index/pueb.jpg" class="card-img-top" alt="..." style="height: 200px;">
+                  <div class="card-body">
+                    <h5 class="card-title">Puebla</h5>
+                    <p class="card-text">La oferta gastronómica que nos ofrece este lugar es otra de las grandes razones
+                      de vivir en Puebla. Casi en cada esquina puedes encontrarte un puesto en el que te sirvan
+                      antojitos poblanos, que es como llaman aquí a la comida callejera.</p>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-<section style="margin-top: 20px;">
-  <h2 class="text">Experiencia de nuestros usuarios</h2>
-  <div class="container">
-    <div class="row">
-      <div class="col"><div class="card mb-3" style="max-width: 18rem;" id="exp">
-        <div class="card-body text-dark">
-          <h5 class="card-title">Dark card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  <section>
+    <div class="container p-4">
+      <div class="row">
+        <div class="col-md-12 bg-dark p-5 text-white" style="text-align:center;font-size: 60px;">Encuentra tu siguente hogar ideal</div>
+        <div class="col-md-3 bg-primary text-center text-white p-4" style="margin-right:0px">
+          <p style="text-align: center;font-size: 25px;">¿Consigue un cambio en tu vida con estos simples cuatro pasos?</p>
+          <ul>
+            <li>Entra en nuestro citio</li>
+            <li>Busca en donde quieres vivir</li>
+            <li>Pide una cotizacion</li>
+            <li>Inicia una nueva vida</li>
+          </ul> 
         </div>
-      </div></div>
-      <div class="col"><div class="card  mb-3" style="max-width: 18rem;" id="exp">
-        <div class="card-body text-dark">
-          <h5 class="card-title">Dark card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
-      </div></div>
-      <div class="col"><div class="card  mb-3" style="max-width: 18rem;" id="exp">
-        <div class="card-body text-dark">
-          <h5 class="card-title">Dark card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
-      </div></div>
-      <div class="col"><div class="card  mb-3" style="max-width: 18rem;" id="exp">
-        <div class="card-body text-dark">
-          <h5 class="card-title">Dark card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
-      </div></div>
-    </div>
-</section>
-
-
-<!--PRopuesta para agregar la tarea 5-->
-<section style="margin-top: 10px;">
-<h2 class="text">Ofertas</h2>
-<div class="container">
-  <div class="row">
-    <div class="col">
-      <!--Aqui iria el objeto-->
-      <div class="card" style="width: 14rem;">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+        <div class="col-md-9" style="width:100vh;">
+          <img src="/assets/img/index/ff.jpg" alt="" style="width: 128.4vh;">
         </div>
       </div>
     </div>
-    <div class="col">
-<div class="card" style="width: 14rem;">
-  <img src="..." class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-    </div>
-    <div class="col">
-      <div class="card" style="width: 14rem;">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card" style="width: 14rem;">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-</section>
-<section style="margin-top: 20px;">
-  <div class="container" style="margin-top: 40px;">
-    <div class="row">
-      <div class="col">
-        <!--Aqui iria el objeto-->
-        <div class="card" style="width: 14rem;">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-  <div class="card" style="width: 14rem;">
-    <img src="..." class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
-  </div>
-      </div>
-      <div class="col">
-        <div class="card" style="width: 14rem;">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card" style="width: 14rem;">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  
   </section>
-  <!--En donde estamos-->
+  <!--Reseñas-->
 <section>
-<h2 class="text">En que partes nos encontramos</h2>
-<icon></icon>
-<h3>en que estados nos encontramos</h3>
-<div class="container">
-  <div class="row">
-    <div class="col">
-      <div class="card bg-dark text-white">
-        <img src="..." class="card-img" alt="...">
-        <div class="card-img-overlay">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          <p class="card-text">Last updated 3 mins ago</p>
+    <div class="container mt-5 mb-5">
+      <div class="row">
+        <div class="col">
+          <h3 class="text-center"><i class="bi bi-suit-heart"></i>Reseñas </h3>
+          <div class="owl-container">
+            <div class="owl-carousel owl-theme">
+              <div class="item">
+                <div class="card" style="width: 18rem;height: 150px;border:none ;">
+                  <div class="card-body">
+                    <h5 class="card-title">Ivan lopez hernandez</h5>
+                    <p class="card-text">Gracias a hogary pude encontrar la casa de mis sueño
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="card" style="width: 18rem;height: 150px;border:none">
+                  <div class="card-body">
+                    <h5 class="card-title">Gustavo Lopez Lopez</h5>
+                    <p class="card-text">Es tan rapido como dar un click
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="card" style="width: 18rem;height: 150px;border:none">
+                  <div class="card-body">
+                    <h5 class="card-title">Guillermo montaño goodman</h5>
+                    <p class="card-text">Hoy vivo sin miedo en una buena Zona
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="card" style="width: 18rem;height: 150px;border:none">
+                  <div class="card-body">
+                    <h5 class="card-title">Saul Goodman</h5>
+                    <p class="card-text">Buenos precios
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="card" style="width: 18rem;height: 150px;border:none">
+                  <div class="card-body">
+                    <h5 class="card-title">Joaquin hernandez suñiga</h5>
+                    <p class="card-text">Homary es buena opcion
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <div class="col">
-      <div class="card bg-dark text-white">
-        <img src="..." class="card-img" alt="...">
-        <div class="card-img-overlay">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          <p class="card-text">Last updated 3 mins ago</p>
+  </section>
+  <!-- iniciamos modal de login -->
+  <!-- El modal de login nos va servir emular un inicio de sesión -->
+  <!-- Modal -->
+  <div class="modal fade" id="modalLogin" tabindex="-1" aria-labelledby="modalLoginLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalLoginLabel">Iniciar Sesión</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="text-center h3 py-3">Bienvenido de vuelta</p>
+          <form>
+            <div class="mb-3">
+              <label for="email" class="form-label">Correo Electrónico</label>
+              <input type="email" class="form-control" id="email" placeholder="Tu correo electrónico"
+                aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <label for="contraseña" class="form-label">Contraseña</label>
+              <input type="password" class="form-control" id="contraseña">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Recordar la contraseña</label>
+            </div>
+            <!-- <button type="submit" class="btn btn-primary d-flex justify-content-between btn-signup" id="toastLogin">Iniciar sesión</button> -->
+            <button type="submit" class="btn btn-primary d-flex justify-content-between btn-signup" id="toastBtn"
+              data-bs-dismiss="modal">Iniciar sesión</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
         </div>
       </div>
     </div>
-    <div class="col">
-      <div class="card bg-dark text-white">
-        <img src="..." class="card-img" alt="...">
-        <div class="card-img-overlay">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          <p class="card-text">Last updated 3 mins ago</p>
+  </div> <!-- Fin del modal de login -->
+
+  <!-- toast -->
+  <section>
+
+    <!-- ! Forma corta -->
+    <!-- Esto hará que aparezca en la parte inferior izquierda... -->
+    <div class="position-fixed bottom-0 end-0 p-3" style="z-index:10;">
+      <div id="toast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+          <strong class="me-auto">Inicio de sesión</strong>
+          <small>Conexión exitosa...</small>
+          <!-- Para que se cierre el toast con data-bs-dismiss -->
+          <button type="button" data-bs-dismiss="toast" aria-label="Cerrar notificación" class="btn-close"></button>
+        </div>
+        <div class="toast-body">
+          <p>Bienvenido de vuelta!</p>
         </div>
       </div>
     </div>
-  </div>
-</div>
-</section>
+  </section> <!-- Fin del toast -->
 
 
 
@@ -286,9 +309,19 @@
   </footer> <!-- Termina footer -->
   <script src="/quieneSomos.html"></script>
   <script src="/Assets/JS/quieneSomos.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-  
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+  <!-- Estos son scripts para los efectos y funcione chido la página ok? -->
+  <script src='assets/js/jquery.min.js'></script>
+  <script src='assets/js/jquery.mousewheel.min.js'></script>
+  <script src='assets/js/owl.carousel.min.js'></script>
+  <script src='assets/js/main.js'></script>
+  <script src="Assets/js/toast.js"></script>
+
 </body>
 
 </html>
