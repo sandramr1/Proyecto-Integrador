@@ -26,7 +26,7 @@
 
 .btn-signup{ /* Clase que se aplicara al boton de login */
     background-color: var(--color-primario)!important;
-    border-color: none!important;
+    border-color: var(--color-secundario)!important;
     transition: .2s ease-in-out 0s;
     border-radius: .5px;
     padding: 5px 40px;
