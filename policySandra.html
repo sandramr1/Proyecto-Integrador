@@ -77,11 +77,12 @@
                         <div class="card card_form">
 
                             <div class="card-body">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                    id="flexRadioDefault1">
+                                <input class="form-check-input contrato" type="radio" name="contrato"
+                                    id="flexRadioDefault1"  value="Diario"checked>
                                 <label class="form-check-label" for="defaultCheck1">Diario</label>
+                                <div class="parrafo">
                                 <p class="card-text">En caso de que un inquilino entre o salga a mediados de mes, se le cobrará por cada día que permaneció durante el mes. Por ejemplo: si el inquilino se muda el 28 de agosto, pagará cuatro días de alquiler en agosto</p>
-
+                                </div>
                             </div>
                         </div>
                         <!--Carta numero 2 con checkbox-->
@@ -89,22 +90,24 @@
                         <div class="card">
 
                             <div class="card-body">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                    id="flexRadioDefault1">
+                                <input class="form-check-input" type="radio" name="contrato"
+                                    id="flexRadioDefault1" value="Quincenal">
                                 <label class="form-check-label" for="defaultCheck1">Quincenal</label>
+                                <div class="parrafo">
                                 <p class="card-text">El inquilino pagará la mitad del alquiler del mes si se queda menos de dos semanas en el mes de mudanza/salida. Por ejemplo: si el inquilino se muda el 28 de agosto, pagará la mitad del alquiler de agosto.</p>
-
+                                </div>
                             </div>
                         </div>
                         <!--Carta numero 3 con checkbox-->
                         <div class="card">
 
                             <div class="card-body">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                    id="flexRadioDefault1">
+                                <input class="form-check-input" type="radio" name="contrato"
+                                    id="flexRadioDefault1" value="Mensual">
                                 <label class="form-check-label" for="defaultCheck1">Mensual</label>
+                                <div class="parrafo">
                                 <p class="card-text">El inquilino siempre pagará el alquiler del mes completo, independientemente de las fechas de entrada/salida. Por ejemplo: si el inquilino se muda el 28 de agosto, pagará el mes de agosto completo.</p>
-
+                                </div>
                             </div>
                         </div>
                   
@@ -120,17 +123,18 @@
                             <div class="card card_form">
 
                                 <div class="card-body">
-                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                        id="flexRadioDefault1">
+                                    <input class="form-check-input" type="radio" name="cancelacion"
+                                        id="flexRadioDefault1" value="Cancelacion estandard" checked>
                                     <label class="form-check-label" for="defaultCheck1">Cancelación estándar</label>
                                     <br>
+                                    <div class="parrafo">
                                     <p class="card-text">Si el inquilino cancela una reserva:</p>
                                     <ul>
                                         <li>Dentro de las 24 horas posteriores a la confirmación - Reembolso completo del alquiler del primer mes. </li>
                                         <br>
                                         <li>Después de 24 horas de la confirmación - No hay reembolso. </li>
                                     </ul>
-
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -139,9 +143,10 @@
                             <div class="card card_form">
 
                                 <div class="card-body">
-                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                        id="flexRadioDefault1">
+                                    <input class="form-check-input" type="radio" name="cancelacion"
+                                        id="flexRadioDefault1" value="Cancelacion flexible">
                                     <label class="form-check-label" for="defaultCheck1">Cancelación flexible</label><br>
+                                    <div class="parrafo">
                                     <p class="card-text">Si el inquilino cancela una reserva dentro de las 24 horas posteriores a la confirmación - Reembolso completo del primer mes de alquiler. <br> <br> Si el inquilino cancela una reserva cuando la fecha de entrada es:</p>
                                     <ul>
                                         <li> Faltan más de 30 días - Reembolso total del primer mes de alquiler.</li>
@@ -151,6 +156,7 @@
                                         <li>Menos de 7 días - No hay reembolso.</li>
                                         <br>
                                     </ul>
+                                    </div>  
 
                                 </div>
                             </div>
@@ -169,15 +175,15 @@
                             <p> ¿Qué tipo de alquiler le gustaría establecer?</p>
 
                          
-
-                            <input class="form-check-input" type="radio" name="flexRadioDefault">
+                            <form>
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" checked>
                             <label> Precio básico </label> 
                             <input class="form-check-input" type="radio" name="flexRadioDefault">
                             <label> Precio avanzado (Establecer tarifas mensuales) </label>
                             <br> <br>
 
-                            <form>
-                                <input class="form-control" type="number">
+                           
+                                <input class="form-control precio" type="number">
                                 <br>
                         <br>
 
@@ -189,7 +195,10 @@
                         <br>
 
                         <div class="col-12">
-                            <button type="submit" class="btn btn-primary btn-signup">Siguiente</button>
+                            <button type="submit" id="btn" class="btn btn-primary btnsubmit">Siguiente</button>
+
+                            <p  id="output"> </p>
+                            <p  id="output2"> </p>
                           </div>
                    
                     </div>
@@ -205,7 +214,7 @@
         <p>Inmobiliaria &copy; 2022 Todos los derechos Reservados</p>
     </footer> <!-- Termina footer -->
 
-
+    <script src="./Assets/JS/formulario/policy.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>

@@ -7,3 +7,18 @@
 .title{
     font-weight: bold;
 }
+
+
+#form-check-input input:checked ~ .checkmark {
+    background-color: black;
+    }
+
+
+.card{
+    margin: 20px !important;
+    
+}
+
+.parrafo{
+    margin:15px;
+}

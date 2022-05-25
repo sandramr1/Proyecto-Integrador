@@ -34,6 +34,7 @@ form.addEventListener('submit',e=>{
         parrafo.innerHTML='enviado';
         var datos=[];//Aqui declaramos un arreglo donde estaremos almacenandos los datos que se vayan agregar a de tu form
 function agregarDatosForm(nombreUsario,emailUsuario,numeroUsuario,comentariosusuario){
+ 
     var nuevoUsario={//Aqui se crea el objeto 
         name:nombreUsario,
         email:emailUsuario,
@@ -41,7 +42,9 @@ function agregarDatosForm(nombreUsario,emailUsuario,numeroUsuario,comentariosusu
         comentarios:comentariosusuario
     };
     console.log(nuevoUsario);
-    datos.push(nuevoUsario);
+    
+        datos.push(nuevoUsario);
+
 }
 function obtenerDatos(){
     return datos;
